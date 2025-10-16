@@ -29,7 +29,7 @@ int main() {
     float percapita2;
 
     // Variáveis de comparação entre as cartas
-    float vencpib;
+    int vencpib;
   
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
@@ -95,9 +95,9 @@ int main() {
     // Desenvolva a lógica de comparação entre duas cartas.
 
     if (pib1 > pib2) {
-         vencpib = cidade1;
+         vencpib = 1;
      } else {
-         vencpib = cidade2;
+         vencpib = 2;
      }
 
     // Exibição dos Resultados:
@@ -106,7 +106,7 @@ int main() {
     printf("Atributo: PIB \n");
     printf("Carta 1: %s : %.2f bilhões de reais \n",cidade1,pib1);
     printf("Carta 2: %s : %.2f bilhões de reais \n",cidade2,pib2); 
-    printf("A cidade vencedora é: %s\n", vencpib);
+    printf("Resultado: Carta %d venceu! \n", vencpib);
 
     return 0;
 }
