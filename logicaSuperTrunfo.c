@@ -104,8 +104,8 @@ int main() {
     // Após realizar as comparações, exiba os resultados para o usuário.
     printf("Comparação de Cartas:\n");
     printf("Atributo: PIB \n");
-    printf("Carta 1: %s : %.2f bilhões de reais \n",cidade1,pib1);
-    printf("Carta 2: %s : %.2f bilhões de reais \n",cidade2,pib2); 
+    printf("Carta 1 - %s: %.2f bilhões de reais \n",cidade1,pib1);
+    printf("Carta 2 - %s: %.2f bilhões de reais \n",cidade2,pib2); 
     printf("Resultado: Carta %d venceu! \n", vencpib);
 
     return 0;
