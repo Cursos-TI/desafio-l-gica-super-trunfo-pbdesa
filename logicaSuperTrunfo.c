@@ -32,8 +32,7 @@ int main() {
     int opcao;
 
     // Início do Programa
-    printf("Bem-vindo ao Desafio Super Trunfo - Países!\n\n
-  
+    
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // --- Leitura dos Dados da Carta 1 ---
@@ -111,6 +110,10 @@ int main() {
     switch (opcao) {
         case 1:
             // Comparação por População
+            printf("Comparação de Cartas:\n");
+            printf("Atributo: População \n");
+            printf("Carta 1 - %s: %lu habitantes \n",cidade1,populacao1);
+            printf("Carta 2 - %s: %lu habitantes \n",cidade2,populacao2);
             if (populacao1 > populacao2) {
                 printf("Carta 1 vence!\n");
             } else if (populacao1 < populacao2) {
@@ -121,6 +124,10 @@ int main() {
             break;
         case 2:
             // Comparação por Área
+            printf("Comparação de Cartas:\n");
+            printf("Atributo: Área \n");
+            printf("Carta 1 - %s: %.2f km2 \n",cidade1,area1);
+            printf("Carta 2 - %s: %.2f km2 \n",cidade2,area2);
             if (area1 > area2) {
                 printf("Carta 1 vence!\n");
             } else if (area1 < area2) {
@@ -131,6 +138,10 @@ int main() {
             break;
         case 3:
             // Comparação por PIB
+            printf("Comparação de Cartas:\n");
+            printf("Atributo: PIB \n");
+            printf("Carta 1 - %s: %.2f bilhões de reais \n",cidade1,pib1);
+            printf("Carta 2 - %s: %.2f bilhões de reais \n",cidade2,pib2);
             if (pib1 > pib2) {
                 printf("Carta 1 vence!\n");
             } else if (pib1 < pib2) {
@@ -141,6 +152,10 @@ int main() {
             break;
         case 4:
             // Comparação por Número de Pontos Turísticos
+            printf("Comparação de Cartas:\n");
+            printf("Atributo: Número de Pontos Turísticos \n");
+            printf("Carta 1 - %s: %d pontos \n",cidade1,pontosturisticos1);
+            printf("Carta 2 - %s: %d pontos \n",cidade2,pontosturisticos2);
             if (pontosturisticos1 > pontosturisticos2) {
                 printf("Carta 1 vence!\n");
             } else if (pontosturisticos1 < pontosturisticos2) {
@@ -151,6 +166,10 @@ int main() {
             break;
         case 5:
             // Comparação por Densidade Demográfica
+            printf("Comparação de Cartas:\n");
+            printf("Atributo: Densidade Demográfica \n");
+            printf("Carta 1 - %s: %.2f habitantes/km2 \n",cidade1,densidade1);
+            printf("Carta 2 - %s: %.2f habitantes/km2 \n",cidade2,densidade2);
             if (densidade1 < densidade2) {
                 printf("Carta 1 vence!\n");
             } else if (densidade1 > densidade2) {
@@ -162,16 +181,7 @@ int main() {
         default:
             printf("Opção inválida!\n");
             return 1;
-    }
-
-     }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    printf("Comparação de Cartas:\n");
-    printf("Atributo: PIB \n");
-    printf("Carta 1 - %s: %.2f bilhões de reais \n",cidade1,pib1);
-    printf("Carta 2 - %s: %.2f bilhões de reais \n",cidade2,pib2); 
+        }   
 
     return 0;
-}
+}   
