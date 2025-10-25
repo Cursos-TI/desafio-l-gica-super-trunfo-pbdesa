@@ -96,7 +96,7 @@ int main() {
 
     //--- Menu Interativo de Comparação ---
     printf("Menu:\n");
-    printf("Escolha o primeiro atributo para comparar entre as duas cartas:\n");
+    printf("Escolha o atributo para comparar entre as duas cartas:\n");
     printf("1 - População\n");
     printf("2 - Área\n");
     printf("3 - PIB\n");
