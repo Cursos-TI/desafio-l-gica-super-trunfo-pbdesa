@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
+// Tema 2 - Comparação das Cartas - Pablo Francisco de Sa
 
 
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
+   // Definição das variáveis para armazenar as propriedades das cidades
    // Variáveis para armazenar os dados da primeira carta
     char estado1;
     char codigo1[4]; 
@@ -21,7 +21,7 @@ int main() {
     char estado2;
     char codigo2[4]; 
     char cidade2[50];
-    unsigned long int populacao2;
+    unsigned long int populacao2;   
     float area2;
     float pib2;
     int pontosturisticos2;
@@ -29,8 +29,9 @@ int main() {
     float percapita2;
 
     // Variáveis do menu interativo
-    int opcao;
-
+    int opcao1;
+    int opcao2;
+    
     // Início do Programa
     
     // Cadastro das Cartas:
@@ -95,19 +96,19 @@ int main() {
 
     //--- Menu Interativo de Comparação ---
     printf("Menu:\n");
-    printf("Escolha o atributo para comparar entre as duas cartas:\n");
+    printf("Escolha o primeiro atributo para comparar entre as duas cartas:\n");
     printf("1 - População\n");
     printf("2 - Área\n");
     printf("3 - PIB\n");
     printf("4 - Número de Pontos Turísticos\n");
     printf("5 - Densidade Demográfica\n");
     printf("Escolha uma opção para comparar: ");
-    scanf("%d", &opcao);
+    scanf("%d", &opcao1);
 
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
 
-    switch (opcao) {
+    switch (opcao1) {
         case 1:
             // Comparação por População
             printf("Comparação de Cartas:\n");
